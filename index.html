@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>WebTech HA 7.4</title>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<script src="script.js"></script>
+
+	</head>
+
+	<body>
+
+		<nav id="presentationControl">
+			<ul>
+				<li>
+					<input type="image" src="/media-skip-backward.svg" alt="first" onclick="showFirstSlide()" class="svg"/>
+				</li>
+
+				<li>
+					<input type="image" src="/media-step-backward.svg" alt="previous" onclick="showPreviousSlide()" class="svg"/>
+				</li>
+
+				<li>
+					<input type="text" value="1" id="currentSlideDisplay"/>
+					<input type="image" src="/media-play.svg" alt ="go!" onclick="changeSlideDisplay()"/>
+				</li>
+
+				<li>
+					<input type="image" src="/media-step-forward.svg" alt="next" onclick="showNextSlide()" class="svg"/>
+				</li>
+
+				<li>
+					<input type="image" src="/media-skip-forward.svg" alt="last" onclick="showLastSlide()"/>
+				</li>
+
+				<li id="totalSlidesDisplay">No slides!</li>
+
+			</ul>
+		</nav>
+
+		<div class="slide">
+			<article>
+				<h1>Slide 1 - and so it begins...</h1>
+				<p>
+					<ul>
+						<li>something</li>
+						<li>content</li>
+						<li>more something</li>
+						<li>more content</li>
+					</ul>
+				</p>
+			</article>
+
+			<article>
+				<h1>Indeed, there is a second slide.</h1>
+				<p>2: something else</p>
+			</article>
+
+			<article>
+				<h1>Can u believe? Slide 3</h1>
+				<p>3: Maultaschen</p>
+			</article>
+
+			<article>
+				<h1>And yet another exciting slide.</h1>
+				<p>(Number 4!!)</p>
+				<p>This one reveals amazing facts about things. Facts such as:
+					<ul>
+						<li>this</li>
+						<li>but also _this_</li>
+						<li>...and also</li>
+						<li>this other thing!</li>
+					</ul>
+				</p>
+			</article>
+
+			<article>
+				<h1>Woah, Slide 5</h1>
+				<p>We do have to stop this at some point...</p>
+			</article>
+
+			<footer>
+				<p>
+					<strong>Web Technologien</strong>
+					<br>	
+					WS15/16
+					<br>
+					Hausaufgabe 7.4
+				</p>
+				<img id="footerLogo" src="TU_Logo.png" alt="Technische Universität Berlin">
+			</footer>
+		</div>
+
+	</body>
+
+</html>
